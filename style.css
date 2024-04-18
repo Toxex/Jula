@@ -1,19 +1,33 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
+
 
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0rem 6rem;
     background: #cb333b;
     color: white;
 }
+
+.container {
+    max-width: 90rem;
+    margin: auto;
+    width: 80rem;
+
+}
+
+.items {
+    padding: 0 0.5rem;
+}
+
 
 /* .bold-text {
     font-weight: bold;
