@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
     font-family: sans-serif;
@@ -17,11 +16,34 @@ body {
     color: white;
 }
 
+.header-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 2rem;
+    background: white;
+    top: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
 .container {
+    display: flex;
     max-width: 90rem;
     margin: auto;
     width: 80rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.searchbar {
+    color: black;
+    background: lightgrey;
+    width: 1200px;
+    height: 40px;
+    position: fixed;
+    margin: 0 0 0 1rem;
 }
 
 .items {
