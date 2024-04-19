@@ -59,6 +59,21 @@ body {
     padding: 0 0.5rem;
 }
 
+.style-search-icon {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.style-other-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+
 
 /* .bold-text {
     font-weight: bold;
