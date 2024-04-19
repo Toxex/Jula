@@ -37,6 +37,13 @@ body {
     height: 50px;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
 @media (max-width: 1024px) {
     .header-main .set-container-right {
         display: none;
@@ -64,6 +71,12 @@ body {
 @media (max-width: 1110px) {
     .header-tertiary {
         padding-top: 3.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-style {
+        display: none;
     }
 }
 
@@ -125,7 +138,19 @@ body {
     padding-top: 7px;
 }
 
+.video-container {
+    margin-right: 30px;
+    padding-left: 20px;
+}
 
-/* .bold-text {
-    font-weight: bold;
-} */
+.image-container {
+
+    max-width: 640px;
+    height: auto;
+    padding-top: 2rem;
+    padding-right: 20px;
+}
+
+.image-style {
+    max-width: 100%;
+}
