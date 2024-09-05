@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     background: white;
@@ -48,37 +49,43 @@ body {
     .header-main .set-container-right {
         display: none;
     }
+
+    .header-main .items {
+        font-size: small;
+    }
 }
 
 @media (max-width: 600px) {
     .header-main .hide-size-600 {
         display: none;
     }
-}
 
-@media (max-width: 1024px) {
-    .header-main .items {
-        font-size: small;
+    .image-style  {
+        display: none; 
+        padding: 0; 
+    }
+
+    .image-container {
+        padding: 0%;
     }
 }
+
 
 @media (max-width: 1110px) {
     .header-tertiary .items {
         display: none;
     }
-}
-
-@media (max-width: 1110px) {
     .header-tertiary {
         padding-top: 3.5rem;
     }
-}
-
-@media (max-width: 600px) {
-    .image-style {
+    .searchbarDiv .searchbar .searchDiv {
         display: none;
+        visibility: hidden;
     }
 }
+
+
+
 
 .container {
     display: flex;
@@ -97,7 +104,9 @@ body {
     flex-wrap: wrap;
 }
 
-.searchbar {
+.searchbarDiv {
+    display: flex;
+    /* flex-grow: 10; */
     color: black;
     background: lightgrey;
     width: 800px;
@@ -105,6 +114,25 @@ body {
     min-width: 100px;
     height: 40px;
     margin: 0 0 0 1rem;
+}
+
+.searchbar {
+    display: flex;
+    flex-grow: 10;
+    color: black;
+    background: lightgrey;
+    /* width: 200px; */
+    max-width: 1200px;
+    min-width: 100px;
+    height: 40px;
+    /* margin: 0 0 0 1rem; */
+}
+
+.searchDiv {
+    max-width: 40px; 
+    min-width: 40px; 
+    min-height: 40px; 
+    background-color: #d22630;
 }
 
 .hide-size-large {
@@ -141,6 +169,8 @@ body {
 .video-container {
     margin-right: 30px;
     padding-left: 20px;
+    height: 100%;
+    min-width:300px;
 }
 
 .image-container {
@@ -153,4 +183,30 @@ body {
 
 .image-style {
     max-width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.icon-div {
+    margin: 5px;
+}
+
+.media-div{
+    display:flex;
+}
+
+.grid-categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-top: 1rem;
+}
+
+.category-div{
+ 
+    height: fit-content; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }

@@ -39,8 +39,8 @@
     </header>
 
     <header class="header-secondary">
-        <div class="container flex-settings">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 100 40">
+        <div class="flex-settings">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 100 40" margin="5">
                 <defs>
                     <style>
                         .cls-1 {
@@ -91,22 +91,24 @@
                         class="cls-3" data-name="Path 10" transform="translate(-60.564 -158.45)" />
                 </g>
             </svg>
-            <input class="searchbar" type="text" placeholder="Hej! Vad söker du efter idag?">
-            <div style="min-width: 40px; min-height: 40px; background-color: #d22630;">
-                <i class="material-icons style-search-icon">search</i>
+        </div>
+            <div class="searchbarDiv">
+                <input class="searchbar" type="text" placeholder="Hej! Vad söker du efter idag?">
+                <div class="searchDiv">
+                    <i class="material-icons style-search-icon">search</i>
+                </div>
             </div>
-            <div style="min-width: 40px; min-height: 40px; background-color: white;">
+            <div class="icon-div" style="justify-items: end; position: sticky; min-width: 40px; min-height: 40px; background-color: white;">
                 <i class="material-icons style-other-icon">person</i>
             </div>
-            <div style="min-width: 40px; min-height: 40px; background-color: white;">
+            <div class="icon-div" style="min-width: 40px; min-height: 40px; background-color: white;">
                 <i class="material-icons style-other-icon">content_paste</i>
             </div>
-            <div style="min-width: 40px; min-height: 40px; background-color: white;">
+            <div class="icon-div" style="min-width: 40px; min-height: 40px; background-color: white;">
                 <i class="material-icons style-other-icon">shopping_cart</i>
             </div>
-        </div>
     </header>
-
+<!-- align all headers properly, make sure they fall in as they should at mediaquery -->
     <header class="header-tertiary">
         <div class="container">
             <b class="items text-size">Produkter <i class="material-icons">keyboard_arrow_down</i></b>
@@ -121,29 +123,127 @@
     </header>
 
     <main class="main">
-        <div class="video-container">
-            <video autoplay loop controls style="width: 100%; height: auto; margin-top: 2rem;">
-                <source
+        <div class="media-div">
+
+            <div class="video-container">
+                <video autoplay loop controls style="width: 100%; height: auto; margin-top: 2rem;">
+                    <source
                     src="https://assets.cdn.jula.com/dmm3BWSV3/assetstream.aspx?assetid=218909&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20240410125420"
                     type="video/mp4">
-            </video>
-        </div>
-        <div class="image-container">
-            <picture class="image-container">
-                <source media="(min-width: 601px)"
+                </video>
+            </div>
+            <div class="image-container">
+                <picture class="image-container">
+                    <source media="(min-width: 601px)"
                     srcset="https://assets.cdn.jula.com/preset:jpgoptimized/w:640/dmm3BWSV3/assetstream.aspx?assetid=132441&amp;mediaformatid=50147&amp;destinationid=10016&amp;lastmodified=20220421114702">
-                <img class="image-style"
+                    <img class="image-style"
                     src="https://assets.cdn.jula.com/preset:jpgoptimized/w:640/dmm3BWSV3/assetstream.aspx?assetid=132441&amp;mediaformatid=50147&amp;destinationid=10016&amp;lastmodified=20220421114702">
-            </picture>
-            <picture class="image-container">
-                <source media="(min-width: 601px)"
+                </picture>
+                <picture class="image-container">
+                    <source media="(min-width: 601px)"
                     srcset="https://assets.cdn.jula.com/preset:jpgoptimized/w:640/dmm3BWSV3/assetstream.aspx?assetid=151271&amp;mediaformatid=50147&amp;destinationid=10016&amp;lastmodified=20220602153027">
-                <img class="image-style"
+                    <img class="image-style"
                     src="https://assets.cdn.jula.com/preset:jpgoptimized/w:640/dmm3BWSV3/assetstream.aspx?assetid=151271&amp;mediaformatid=50147&amp;destinationid=10016&amp;lastmodified=20220602153027">
-            </picture>
+                </picture>
+            </div>
         </div>
     </main>
+    <div class="grid-categories">
+        <div class="category-div" style="width: 170px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187677&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20230615151917 1x, https://assets.cdn.jula.com/w:96/dmm3BWSV3/assetstream.aspx?assetid=187677&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20230615151917 2x" src="https://assets.cdn.jula.com/w:96/dmm3BWSV3/assetstream.aspx?assetid=187677&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20230615151917">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187677&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20230615151917 1x, https://assets.cdn.jula.com/w:96/dmm3BWSV3/assetstream.aspx?assetid=187677&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20230615151917 2x" src="https://assets.cdn.jula.com/w:96/dmm3BWSV3/assetstream.aspx?assetid=187677&amp;mediaformatid=10061&amp;destinationid=10016&amp;lastmodified=20230615151917">
+            </picture>
+            <p>Verktyg och maskiner</p>
+        </div>
+        <div class="category-div" style="width: 130px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187678&mediaformatid=10061&destinationid=10016&lastmodified=20230615151922">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187678&mediaformatid=10061&destinationid=10016&lastmodified=20230615151922">
+            </picture>
+            <p>Bygg och färg</p>
+        </div>
+        <div class="category-div" style="width: 150px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187679&mediaformatid=10061&destinationid=10016&lastmodified=20230615151923">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187679&mediaformatid=10061&destinationid=10016&lastmodified=20230615151923" >
+            </picture>
+            <p>El och belysning</p>
+        </div>
+        <div class="category-div" style="width: 150px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187680&mediaformatid=10061&destinationid=10016&lastmodified=20230615151924">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187680&mediaformatid=10061&destinationid=10016&lastmodified=20230615151924" >
+            </picture>
+            <p>kläder och skydd</p>
+        </div>
+        <div class="category-div" style="width: 110px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=195827&mediaformatid=10061&destinationid=10016&lastmodified=20230921171906">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=195827&mediaformatid=10061&destinationid=10016&lastmodified=20230921171906" >
+            </picture>
+            <p>Trädgård</p>
+        </div>
+        <div class="category-div" style="width: 80px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187682&mediaformatid=10061&destinationid=10016&lastmodified=20230615151927">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187682&mediaformatid=10061&destinationid=10016&lastmodified=20230615151927" >
+            </picture>
+            <p>Fritid</p>
+        </div>
+        <div class="category-div" style="width: 150px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=201474&mediaformatid=10061&destinationid=10016&lastmodified=20231102132011">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=201474&mediaformatid=10061&destinationid=10016&lastmodified=20231102132011" >
+            </picture>
+            <p>Bil och garage</p>
+        </div>
+        <div class="category-div" style="width: 150px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187684&mediaformatid=10061&destinationid=10016&lastmodified=20230615151922">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187684&mediaformatid=10061&destinationid=10016&lastmodified=20230615151922" >
+            </picture>
+            <p>Hem och hushåll</p>
+        </div>
+        <div class="category-div" style="width: 120px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=232976&mediaformatid=10061&destinationid=10016&lastmodified=20240531095130">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=232976&mediaformatid=10061&destinationid=10016&lastmodified=20240531095130" >
+            </picture>
+            <p>Reservdelar</p>
+        </div>
+        <div class="category-div" style="width: 90px;">
+            <picture>
+                <source media="(min-width: 48px)"
+                srcset="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187676&mediaformatid=10061&destinationid=10016&lastmodified=20230615151919">
+                <img 
+                src="https://assets.cdn.jula.com/w:48/dmm3BWSV3/assetstream.aspx?assetid=187676&mediaformatid=10061&destinationid=10016&lastmodified=20230615151919" >
+            </picture>
+            <p>Outlet</p>
+        </div>
+    </div>
 
+    <footer>
+        <h2>Populärt just nu!</h2>
+    </footer>
 </body>
 
 </html>
